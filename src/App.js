@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import RestoProfile from './stack/RestoProfile';
+import SubirData from './components/SubirData';
 
 function App() {
   return (
@@ -17,8 +19,11 @@ function App() {
         >
           Learn React
         </a>
+      <RestoProfile/>
+      <SubirData/>
       </header>
-    </div>
+  </div>
+
   );
 }
 
