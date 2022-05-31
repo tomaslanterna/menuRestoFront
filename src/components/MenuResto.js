@@ -5,7 +5,7 @@ import MenuItem from './MenuItem';
 
 const MenuResto = ({ menuResto }) => {
     return (
-        <div>
+        <div>{/*Comentario prueba*/}
             {
                 <ListGroup>
                     {(menuResto === null || menuResto.lenght === 0) ? <div>Cargando</div> : menuResto.map(it => <ListGroup.Item key={it.productId}><MenuItem product={it}/></ListGroup.Item>)}
