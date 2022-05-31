@@ -20,7 +20,6 @@ function App() {
           Learn React
         </a>
       <RestoProfile/>
-      <SubirData/>
       </header>
   </div>
 
