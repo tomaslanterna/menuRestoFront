@@ -1,0 +1,45 @@
+
+.tarjeta-rest{
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.wrap-text_tarjeta-rest{
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    background: linear-gradient(to top, rgb(0 0 0 / .5),rgb(0 0 0 / .5));
+}
+
+.cta-wrap_tarjeta-rest{
+    display: flex;
+    justify-content: space-between;
+}
+
+.precio_tarjeta-rest span{
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.cta_tarjeta-rest{
+    background-color: #FFC300;
+    padding: .25rem 1rem;
+    border-radius: 4px;
+}
+
+.cta_tarjeta-rest Button{
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.container-restoProfile{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
