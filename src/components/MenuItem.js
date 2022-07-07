@@ -11,9 +11,9 @@ const MenuItem = ({product}) => {
             <Card.Text>{product.productDescription}</Card.Text>
             <div className='cta-wrap_tarjeta-rest'>
               <div className='precio_tarjeta-rest'>
-                <span></span>
+                <span>Precio</span>
               </div>
-                <Button className='cta_tarjeta-rest'>Hola</Button>
+                <Button className='cta_tarjeta-rest'>Agregar al carrito</Button>
             </div>
         </Card.Body>
     </Card>

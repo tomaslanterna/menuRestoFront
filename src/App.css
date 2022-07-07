@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-image: url('https://videohive.img.customer.envatousercontent.com/files/b73b1f0c-062c-41dc-a6be-dc8778c82eed/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=2a9a3846083554d13618d5d5e7fbc5a4');
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .App-logo {

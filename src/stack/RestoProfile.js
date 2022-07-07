@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import MenuResto from '../components/MenuResto'
 import BannerResto from '../components/BannerResto';
 import '../style/styles.css';
+import BannerRestoTwo from '../components/BannerRestoTwo';
 
 const RestoProfile = () => {
 
@@ -20,7 +21,7 @@ const RestoProfile = () => {
     }, [])
     return (
         <div className='container-restoProfile'>
-            <BannerResto />
+            <BannerResto/>
             <MenuResto menuResto={resto} />
         </div>
     )

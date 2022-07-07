@@ -20,7 +20,7 @@ const slideImages=[
 const BannerResto = () => {
   return (
     
-    <div className='slide-container m-2'>
+    <div className='slide-container m-2 banner-restoProfile'>
       <Slide>
         {
           slideImages.map((slideImage,index)=>{
