@@ -17,14 +17,26 @@ const slideImages=[
   }
 ]
 
+const properties = {
+  duration: 5000,
+  transitionDuration: 500,
+  infinite: true,
+  indicators: true,
+  arrows: true,
+  pauseOnHover: true,
+  onChange: (oldIndex, newIndex) => {
+    console.log(`slide transition from ${oldIndex} to ${newIndex}`);
+  }
+};
+
 const BannerResto = () => {
   return (
     
-    <div className='slide-container m-2 banner-restoProfile'>
-      <Slide>
+    <div className='slide-container'>
+      <Slide {...properties} className='slide'>
         {
           slideImages.map((slideImage,index)=>{
-            <div className='each-slide' key={index}>
+            <div key={index}>
               <div style={{'backgroundImage':`url(${slideImage.url})`}}>
                 <span>{slideImage.caption}</span>
               </div>
