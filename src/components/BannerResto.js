@@ -17,6 +17,8 @@ const slideImages=[
   }
 ]
 
+const slideStyles = {'height':'auto', 'width': '100%'}
+
 const properties = {
   duration: 5000,
   transitionDuration: 500,
@@ -37,10 +39,8 @@ const BannerResto = () => {
         {
           slideImages.map((slideImage,index)=>{
             return (
-            <div key={index}> 
-              <div style={{'backgroundImage':`url(${slideImage.url})`}}>
-                <span>{slideImage.caption}</span>
-              </div>
+            <div key={index} style={slideStyles}> 
+              <img src={slideImage.url} alt={slideImage.caption} />
             </div>
             )
           })
