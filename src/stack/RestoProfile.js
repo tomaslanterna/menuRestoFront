@@ -3,6 +3,8 @@ import MenuResto from '../components/MenuResto'
 import BannerResto from '../components/BannerResto';
 import '../style/styles.css';
 import BannerRestoTwo from '../components/BannerRestoTwo';
+import ButtonCart from '../components/ButtonCart';
+import { Navbar } from 'react-bootstrap';
 
 const RestoProfile = () => {
 
@@ -21,8 +23,13 @@ const RestoProfile = () => {
     }, [])
     return (
         <div className='container-restoProfile'>
-            <BannerResto/>
-            <MenuResto menuResto={resto} />
+            <BannerResto />
+            <div className='menuResto-position'>
+                <MenuResto menuResto={resto} />
+            </div>
+            <Navbar className='cart-Button-container'>
+                <ButtonCart />
+            </Navbar>
         </div>
     )
 }

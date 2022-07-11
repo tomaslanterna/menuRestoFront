@@ -1,49 +1,107 @@
-
-.tarjeta-rest{
+.tarjeta-rest {
     background-repeat: no-repeat;
-    height: 400px;
+    height: 100%;
     border-radius: 6px;
     justify-content: center;
     display: flex;
     align-items: flex-end;
+    padding: 5%;
 }
 
-.wrap-text_tarjeta-rest{
+.wrap-text_tarjeta-rest {
     color: white;
     padding: 8px;
     border-radius: 6px;
-    background: linear-gradient(to top, rgb(0 0 0 / .5),rgb(0 0 0 / .5));
+    background: linear-gradient(to top, rgb(0 0 0 / .5), rgb(0 0 0 / .5));
 }
 
-.cta-wrap_tarjeta-rest{
+.cta-wrap_tarjeta-rest {
     display: flex;
     justify-content: space-between;
 }
 
-.precio_tarjeta-rest span{
-font-size: 1.5rem;
-font-weight: bold;
+.precio_tarjeta-rest span {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-.cta_tarjeta-rest{
+.cta_tarjeta-rest {
     background-color: #FFC300;
     padding: .25rem 1rem;
-    border-radius: 4px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    border-color: #fff;
+    border-width: 1.5px;
 }
 
-.cta_tarjeta-rest Button{
+.cta_tarjeta-rest Button {
     color: #fff;
     font-weight: bold;
 
 }
 
-.container-restoProfile{
-    display: flexbox;
+.container-restoProfile {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
+
+}
+
+.banner-restoProfile {
+    height: 100px;
+}
+
+.slide-container {
+    direction: ltr;
+    width: 100%;
+    margin: auto;
+    padding-top: 25%;
+}
+
+.slide{
+    height: 100%;
+    width: 100%;
+}
+
+.each-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.cart-Button{
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+}
+
+.cart-Button-container{
+    padding: 15px;
+    height: 35px;
+    width: 90%;
+    position: fixed;
+    margin-top: 195%;
+}
+
+.cart-Button-position{
+    position: fixed;
     
 }
 
-.banner-restoProfile{
-    height: 100px;
+.product-Name{
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.menuResto-position{
+    margin-bottom: 15%;
+}
+
+
+.banner{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS02o2yzLdO-fmT1mCvQTjMEjvUueXDSdGLvaDCveyJdw_4Rb6qQFZJ2pCZBJk2hkmnUuo&usqp=CAU');
 }
