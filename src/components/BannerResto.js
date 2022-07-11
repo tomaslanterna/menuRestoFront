@@ -24,11 +24,13 @@ const BannerResto = () => {
       <Slide>
         {
           slideImages.map((slideImage,index)=>{
+            return (
             <div className='each-slide' key={index}>
               <div style={{'backgroundImage':`url(${slideImage.url})`}}>
                 <span>{slideImage.caption}</span>
               </div>
             </div>
+            )
           })
         }
       </Slide>
