@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import MenuResto from '../components/MenuResto'
 import BannerResto from '../components/BannerResto';
 import '../style/styles.css';
 import BannerRestoTwo from '../components/BannerRestoTwo';
 import ButtonCart from '../components/ButtonCart';
 import { Navbar } from 'react-bootstrap';
+import cartContext from '../context/CartContext';
 
 const RestoProfile = () => {
 
     const [resto, setResto] = useState([]);
+    const{cart}=useContext(cartContext);
 
     useEffect(() => {
         const getResto = () => {
@@ -28,7 +30,7 @@ const RestoProfile = () => {
                 <MenuResto menuResto={resto} />
             </div>
             <Navbar className='cart-Button-container'>
-                <ButtonCart />
+            {(cart.lenght==0)?<><ButtonCart /></>:<></>}
             </Navbar>
         </div>
     )

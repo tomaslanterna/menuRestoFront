@@ -4,20 +4,18 @@ import 'react-slideshow-image/dist/styles.css';
 
 const slideImages=[
   {
-    url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS02o2yzLdO-fmT1mCvQTjMEjvUueXDSdGLvaDCveyJdw_4Rb6qQFZJ2pCZBJk2hkmnUuo&usqp=CAU',
+    url:'http://www.concortv.gob.pe/images/informacion/noticias/2012/05-comida-chatarra2.jpg',
     caption:'Slide 1'
   },
   {
-    url:'https://m.media-amazon.com/images/I/41Yt82nCzIL.jpg',
+    url:'https://www.fratellos.co.uk/myimages/349/fratellos_menu_woodfiredpizza2.jpg',
     caption:'Slide 2'
   },
   {
-    url:'https://m.media-amazon.com/images/I/41-hKdtBczL._AC_SY580_.jpg',
+    url:'https://www.elmundo.es/larevista/num74/imagenes/com3b1.jpg',
     caption:'Slide 3'
   }
 ]
-
-const slideStyles = {'height':'auto', 'width': '100%'}
 
 const properties = {
   duration: 5000,
@@ -39,7 +37,7 @@ const BannerResto = () => {
         {
           slideImages.map((slideImage,index)=>{
             return (
-            <div key={index} style={slideStyles}> 
+            <div key={index} className='slideStyle'> 
               <img src={slideImage.url} alt={slideImage.caption} />
             </div>
             )

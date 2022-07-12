@@ -45,7 +45,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
+    width: auto;
 
 }
 
@@ -57,7 +57,6 @@
     direction: ltr;
     width: 100%;
     margin: auto;
-    padding-top: 25%;
 }
 
 .slide{
@@ -102,6 +101,7 @@
 }
 
 
-.banner{
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS02o2yzLdO-fmT1mCvQTjMEjvUueXDSdGLvaDCveyJdw_4Rb6qQFZJ2pCZBJk2hkmnUuo&usqp=CAU');
+.slideStyle{
+    height:'auto';
+    width: 'auto';
 }

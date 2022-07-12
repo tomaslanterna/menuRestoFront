@@ -1,13 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 import RestoProfile from './stack/RestoProfile';
+import { CartProvider } from './context/CartContext';
+import { Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <RestoProfile />
+      <CartProvider>
+        <Router>
+          <Routes>
+            <Route exact to path="/resto/:restoId/:mesaId" component={RestoProfile}/>
+          </Routes>
+        </Router>
+      </CartProvider>
     </div>
-
   );
 }
 
