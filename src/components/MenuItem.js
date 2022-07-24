@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button, Card } from 'react-bootstrap';
+import cartContext from '../context/CartContext';
 import '../style/styles.css';
 
 const MenuItem = ({product}) => {
+
+
+  const {cart,addItem,totalCart}=useContext(cartContext)
+
+  const saveProduct=(prod)=>{
+    addItem(prod)
+    totalCart(prod)
+  }
+
+
   return (
     <Card className='tarjeta-rest col-md-4 col-lg-3 col-sm-12'>
         <Card.Body className='wrap-text_tarjeta-rest'>
@@ -13,7 +24,7 @@ const MenuItem = ({product}) => {
               <div className='precio_tarjeta-rest'>
                 <span>$ {product.productPrice}</span>
               </div>
-                <Button className='cta_tarjeta-rest'>Agregar al carrito</Button>
+                <Button className='cta_tarjeta-rest' onClick={()=>{saveProduct(product)}}>Agregar al carrito</Button>
             </div>
         </Card.Body>
     </Card>
